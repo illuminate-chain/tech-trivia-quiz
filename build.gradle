@@ -29,7 +29,7 @@ dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-web'
 
     // Spring Security
-    implementation 'org.springframework.boot:spring-boot-starter-security'
+//    implementation 'org.springframework.boot:spring-boot-starter-security'
 
     // Spring Websocket
     implementation 'org.springframework.boot:spring-boot-starter-websocket'
@@ -39,9 +39,12 @@ dependencies {
     annotationProcessor 'org.projectlombok:lombok'
 
     // Test
-    testImplementation 'org.springframework.boot:spring-boot-starter-test'
-    testImplementation 'org.springframework.security:spring-security-test'
+//    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+//    testImplementation 'org.springframework.security:spring-security-test'
     testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+
+    implementation 'mysql:mysql-connector-java:8.0.33'
+
 }
 
 tasks.named('test') {
