@@ -30,21 +30,6 @@ public class GenericEnumAttributeConverter<E extends Enum<E> & IntEnum> implemen
         return (attribute != null) ? attribute.getValue() : null;
     }
 
-//
-//    @Override
-//    public E convertToEntityAttribute(Integer dbData) {
-////        return (dbData != null) ? enumClass.getEnum(enumClass, dbData) : null;
-//        return (dbData != null) ? getEnum(enumClass, dbData) : null;
-//    }
-//
-//    //todo : Enum 클래스,int 넘겨 받아서 string(enum) 추출
-//    private E getEnum(E enumClassTemp, int value) {
-//        for (E enumConstant : enumClassTemp.getDeclaringClass().getEnumConstants()) {
-//            if (enumConstant.na == value) return enumConstant;
-//        }
-//        throw new IllegalArgumentException("Invalid value: " + value);
-//    }
-//
 
     /**
      * 데이터베이스 열 값을 해당하는 Enum 인스턴스로 변환합니다.
